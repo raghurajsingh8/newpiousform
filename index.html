@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Design Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Project Design</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Inputs</legend>
+                <label for="power-plant">Type of Power Plant:</label>
+                <select id="power-plant" name="power-plant">
+                    <option value="opex">OPEX</option>
+                    <option value="capex">CAPEX</option>
+                </select>
+
+                <label for="system-type">Type of System:</label>
+                <select id="system-type" name="system-type">
+                    <option value="on-grid">ON GRID</option>
+                    <option value="off-grid">OFF GRID</option>
+                </select>
+
+                <label for="capacity">Plant Expected Capacity (kW):</label>
+                <input type="text" id="capacity" name="capacity" placeholder="Enter expected capacity">
+
+                <label for="address">Site Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter site address">
+
+                <label for="coordinates">Google Coordinates:</label>
+                <input type="text" id="coordinates" name="coordinates" placeholder="Enter google coordinates">
+
+                <label for="area">Total Available Area (sq. ft):</label>
+                <input type="text" id="area" name="area" placeholder="Enter total available area">
+            </fieldset>
+
+            <fieldset>
+                <legend>Detailed Sketch</legend>
+                <label for="parapet">Parapet Wall Height and Width (ft):</label>
+                <input type="text" id="parapet" name="parapet" placeholder="Enter height and width">
+
+                <label for="roof-type">Tick Roof Type:</label>
+                <select id="roof-type" name="roof-type">
+                    <option value="rcc">RCC</option>
+                    <option value="tin-shed">Tin Shed</option>
+                    <option value="both">Both</option>
+                </select>
+
+                <label for="floors">Number of Floors & Height:</label>
+                <input type="text" id="floors" name="floors" placeholder="Enter number of floors & height">
+
+                <label for="adj-building">Details of Adjacent Building:</label>
+                <input type="text" id="adj-building-height" name="adj-building-height" placeholder="Height">
+                <input type="text" id="adj-building-direction" name="adj-building-direction" placeholder="Direction">
+                <input type="text" id="adj-building-distance" name="adj-building-distance" placeholder="Distance (ft)">
+
+                <label for="other-objects">Details of Other Things:</label>
+                <input type="text" id="other-height" name="other-height" placeholder="Height">
+                <input type="text" id="other-direction" name="other-direction" placeholder="Direction">
+                <input type="text" id="other-distance" name="other-distance" placeholder="Distance (ft)">
+
+                <label for="tree-tower">Specify Tree, Tower Height:</label>
+                <input type="text" id="tree-tower" name="tree-tower" placeholder="Enter tree or tower height">
+
+                <label for="earth-pit">Number of Spare Earth Pits & Location:</label>
+                <input type="text" id="earth-pit" name="earth-pit" placeholder="Enter details">
+
+                <label for="la">Number of Existing LA & Height:</label>
+                <input type="text" id="la" name="la" placeholder="Enter details">
+            </fieldset>
+
+            <fieldset>
+                <legend>Electrical Aspect</legend>
+                <label for="connection">Type of Connection:</label>
+                <select id="connection" name="connection">
+                    <option value="single-phase">Single Phase</option>
+                    <option value="three-phase">Three Phase</option>
+                </select>
+
+                <label for="service-provider">Service Provider:</label>
+                <input type="text" id="service-provider" name="service-provider" placeholder="Enter service provider">
+
+                <label for="metering-points">Total No. of Metering Points:</label>
+                <input type="text" id="metering-points" name="metering-points" placeholder="Enter number">
+
+                <label for="dist-lt-acdb">Distance Between LT Panel and ACDB (ft):</label>
+                <input type="text" id="dist-lt-acdb" name="dist-lt-acdb" placeholder="Enter distance">
+
+                <label for="dist-acdb-inverter">Distance Between ACDB and Inverter (ft):</label>
+                <input type="text" id="dist-acdb-inverter" name="dist-acdb-inverter" placeholder="Enter distance">
+
+                <label for="mccb">Number of Spare MCCB/VCB/ACB in Panel & Rating:</label>
+                <input type="text" id="mccb" name="mccb" placeholder="Enter details">
+
+                <label for="lt-ht-panel">Client LT/HT Panel with Rating (Amp):</label>
+                <input type="text" id="lt-ht-panel" name="lt-ht-panel" placeholder="Enter rating">
+
+                <label for="dg-set">DG Set Rating (kVA) (If Applicable):</label>
+                <input type="text" id="dg-set" name="dg-set" placeholder="Enter DG set rating">
+
+                <label for="transformer">Transformer Rating (kVA):</label>
+                <input type="text" id="transformer" name="transformer" placeholder="Enter transformer rating">
+
+                <label for="survey-by">Site Survey Done By:</label>
+                <input type="text" id="survey-by" name="survey-by" placeholder="Enter name">
+
+                <label for="checked-by">Checked By:</label>
+                <input type="text" id="checked-by" name="checked-by" placeholder="Enter name">
+
+                <label for="prepared-by">Prepared By:</label>
+                <input type="text" id="prepared-by" name="prepared-by" placeholder="Enter name">
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </fieldset>
+
+            <fieldset>
+                <legend>Attachments</legend>
+                <input type="checkbox" id="site-drawing" name="site-drawing">
+                <label for="site-drawing">Site Drawing (AutoCAD)</label><br>
+
+                <input type="checkbox" id="single-line-diagram" name="single-line-diagram">
+                <label for="single-line-diagram">Client's Single Line Diagram (SLD)</label><br>
+
+                <input type="checkbox" id="datasheet" name="datasheet">
+                <label for="datasheet">Inverter and Module Datasheet or Model Number</label><br>
+
+                <input type="checkbox" id="photos" name="photos">
+                <label for="photos">Camera Photos and Videos of the Site</label><br>
+
+                <input type="checkbox" id="shade-structure" name="shade-structure">
+                <label for="shade-structure">Shade Structure Dimensions and Design if TIN Shed</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Company Detail (For Client Only)</legend>
+                <label for="client-name">Client Name:</label>
+                <input type="text" id="client-name" name="client-name" placeholder="Enter client name">
+
+                <label for="client-contact">Client Contact Details:</label>
+                <input type="text" id="client-contact" name="client-contact" placeholder="Enter contact person name">
+                <input type="text" id="client-phone" name="client-phone" placeholder="Phone">
+                <input type="email" id="client-email" name="client-email" placeholder="Email">
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
